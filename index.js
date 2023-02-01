@@ -30,6 +30,15 @@ app.use(bodyParser.urlencoded({ extended: false })) // analyze bodies through th
 app.use(bodyParser.json())
 app.use('/api', router) // access the route file
 
+app.get("/", (req, res) => {
+  res.status(200).send({ msg: "hello world" })
+})
+
+app.post("welcome", (req, res) => {
+  const { usename } = req.body;
+  res.status(200).send({ msg: `Hello, ${usename}`})
+})
+
 // listen to clients connections 
 io.on("connection", (socket) => {
   console.log(`User Connected: ${socket.id}`);
