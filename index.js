@@ -67,6 +67,6 @@ mongoose.set('strictQuery', true);
 mongoose.connect(url, {useNewUrlParser: true}).then(() => {
   console.log('successful connection')
   server.listen(PORT, () => {
-    console.log('server is runnig in https://diceroller-chat-server.up.railway.app/:', PORT)
+    console.log('server is runnig in localhost:', PORT)
   })
 })
