@@ -15,7 +15,7 @@ yarn dev # run in development mode with nodemon
 yarn start # run in production mode
 ```
 #### Clone Client 
-- `Visit Client Repository:` [Dice Roller](https://github.com/gisbelt/diceRoller-chat/)
+- `Visit frontend repository:` [Dice Roller](https://github.com/gisbelt/diceRoller-chat/)
 ```sh
 git clone https://github.com/gisbelt/diceRoller-chat.git
 cd diceRoller-chat
