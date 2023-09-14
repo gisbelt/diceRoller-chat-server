@@ -34,3 +34,11 @@ This app needs the following environment Variables
 - `MONGO_PASSWORD` this is the Mongodb password
 - `PORT` the server http port for the application
 
+
+### Contributing
+- Fork the repository
+- Make your changes in a separate branch
+- Open a pull request
+
+### Ending Note
+- Consider giving the repo a ⭐ if you liked the project!
