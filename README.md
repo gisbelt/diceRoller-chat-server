@@ -27,9 +27,8 @@ yarn start
 
 
 ### Environment Variables
-
-This app needs the following environment Variables
-
+- `Make sure you have your own MongoDB Atlas connection string:` [MongoDB Atlas](https://www.mongodb.com/docs/manual/reference/connection-string/#find-your-mongodb-atlas-connection-string)
+##### This app needs the following environment Variables
 - `MONGO_USER` this is the Mongodb user
 - `MONGO_PASSWORD` this is the Mongodb password
 - `PORT` the server http port for the application
