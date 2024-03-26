@@ -15,7 +15,7 @@ let url = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}
 mongoose.Promise = global.Promise
 
 const app = express();
-const PORT = 4000
+const PORT = process.env.PORT || 4000;
 
 // create server with module http
 const server = http.createServer(app)
