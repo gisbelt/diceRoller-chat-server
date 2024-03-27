@@ -11,7 +11,7 @@ import router from './routes/message.js'
 dotenv.config();
 
 // settings mongoose 
-let url = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.rr0qhya.mongodb.net/?retryWrites=true&w=majority`
+let url = `${process.env.MONGO_URI}`
 mongoose.Promise = global.Promise
 
 const app = express();
@@ -33,14 +33,8 @@ app.use(bodyParser.urlencoded({ extended: false })) // analyze bodies through th
 app.use(bodyParser.json())
 app.use('/api', router) // access the route file
 
-/* This is a route that is protected by the JWT middleware. If you try to access it without a valid
-token, you will get a 401 error. */
-app.get('/protected', (req, res) => {
-  res.status(200).send({ message: "This message is protected" });
-});
-
 app.get("/", (req, res) => {
-  res.status(200).send({ msg: "hello world" })
+  res.status(200).send({ msg: "I'm working bitch" })
 })
 
 app.post("welcome", (req, res) => {
